@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace PlayerNinjaDomain.Classes
@@ -15,6 +16,8 @@ namespace PlayerNinjaDomain.Classes
         public int StateClanId { get; set; }
 
         public List<SportsNinjaEquipment> SportsEquipmentOwned { get; set; }
+
+        public DateTime DateOfBirth { get; set; }
     }
     public class StateClan
     {

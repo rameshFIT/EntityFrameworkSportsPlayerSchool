@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayerNinjaDomain.Classes",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerNinjaDomain.DataModel", "PlayerNinjaDomain.DataModel\PlayerNinjaDomain.DataModel.csproj", "{484237B2-E50F-49D5-A10C-33B184142ACB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdmxDesignerFromDatabase", "EdmxDesignerFromDatabase\EdmxDesignerFromDatabase.csproj", "{A5B5336C-FC59-4826-8A80-57B32A4F3205}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication", "ConsoleApplication\ConsoleApplication.csproj", "{4F05A115-4965-4DD8-8F1E-5A42C6E02600}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{484237B2-E50F-49D5-A10C-33B184142ACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{484237B2-E50F-49D5-A10C-33B184142ACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{484237B2-E50F-49D5-A10C-33B184142ACB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5B5336C-FC59-4826-8A80-57B32A4F3205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5B5336C-FC59-4826-8A80-57B32A4F3205}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5B5336C-FC59-4826-8A80-57B32A4F3205}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5B5336C-FC59-4826-8A80-57B32A4F3205}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F05A115-4965-4DD8-8F1E-5A42C6E02600}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F05A115-4965-4DD8-8F1E-5A42C6E02600}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F05A115-4965-4DD8-8F1E-5A42C6E02600}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F05A115-4965-4DD8-8F1E-5A42C6E02600}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

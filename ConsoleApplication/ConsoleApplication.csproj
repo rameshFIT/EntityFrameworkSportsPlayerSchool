@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{484237B2-E50F-49D5-A10C-33B184142ACB}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PlayerNinjaDomain.DataModel</RootNamespace>
-    <AssemblyName>PlayerNinjaDomain.DataModel</AssemblyName>
+    <ProjectGuid>{4F05A115-4965-4DD8-8F1E-5A42C6E02600}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ConsoleApplication</RootNamespace>
+    <AssemblyName>ConsoleApplication</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -48,19 +50,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\202004261754488_initialScriptByRami.cs" />
-    <Compile Include="Migrations\202004261754488_initialScriptByRami.Designer.cs">
-      <DependentUpon>202004261754488_initialScriptByRami.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202004270204371_UpdateFieldDOBToPlayerNinjaModel.cs" />
-    <Compile Include="Migrations\202004270204371_UpdateFieldDOBToPlayerNinjaModel.Designer.cs">
-      <DependentUpon>202004270204371_UpdateFieldDOBToPlayerNinjaModel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="PlayerNinjaContext.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -68,14 +62,10 @@
       <Project>{941cedbf-67db-4b82-b144-2b5a52c47ae9}</Project>
       <Name>PlayerNinjaDomain.Classes</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202004261754488_initialScriptByRami.resx">
-      <DependentUpon>202004261754488_initialScriptByRami.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202004270204371_UpdateFieldDOBToPlayerNinjaModel.resx">
-      <DependentUpon>202004270204371_UpdateFieldDOBToPlayerNinjaModel.cs</DependentUpon>
-    </EmbeddedResource>
+    <ProjectReference Include="..\PlayerNinjaDomain.DataModel\PlayerNinjaDomain.DataModel.csproj">
+      <Project>{484237b2-e50f-49d5-a10c-33b184142acb}</Project>
+      <Name>PlayerNinjaDomain.DataModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

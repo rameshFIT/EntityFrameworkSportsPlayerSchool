@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e8f89683c24d4137996ea77dfb277472" Name="Diagram1">
+        <EntityTypeShape EntityType="AdventureWorksSuperLTModel.Product" Width="1.5" PointX="3" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorksSuperLTModel.ProductCategory" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorksSuperLTModel.ProductDescription" Width="1.5" PointX="9.5" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorksSuperLTModel.ProductModel" Width="1.5" PointX="5.375" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorksSuperLTModel.ProductModelProductDescription" Width="1.5" PointX="7.5" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorksSuperLTModel.vGetAllCategory" Width="1.5" PointX="6" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorksSuperLTModel.vProductAndDescription" Width="1.5" PointX="9.25" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorksSuperLTModel.vProductModelCatalogDescription" Width="1.5" PointX="11.375" PointY="0.5" IsExpanded="true" />
+        <AssociationConnector Association="AdventureWorksSuperLTModel.FK_Product_ProductCategory_ProductCategoryID" ManuallyRouted="false" />
+        <AssociationConnector Association="AdventureWorksSuperLTModel.FK_Product_ProductModel_ProductModelID" ManuallyRouted="false" />
+        <AssociationConnector Association="AdventureWorksSuperLTModel.FK_ProductCategory_ProductCategory_ParentProductCategoryID_ProductCategoryID" ManuallyRouted="false" />
+        <AssociationConnector Association="AdventureWorksSuperLTModel.FK_ProductModelProductDescription_ProductDescription_ProductDescriptionID" ManuallyRouted="false" />
+        <AssociationConnector Association="AdventureWorksSuperLTModel.FK_ProductModelProductDescription_ProductModel_ProductModelID" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
